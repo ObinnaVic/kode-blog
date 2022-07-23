@@ -1,0 +1,180 @@
+@import url(style.css);
+
+:root {
+    --primary: #0D6EFD;
+    --secondary: #669E00;
+}
+
+.Iconography:hover{
+    transform: rotate(90deg);
+    animation: anime 1.2s infinite alternate ease-in-out;
+    overflow: hidden;
+}
+
+.red {
+    color: black !important;
+}
+
+.book {
+    color: white;
+    -webkit-text-stroke: 2px black;
+    cursor: pointer;
+}
+
+.share-btn {
+    color: #ffffff;
+    -webkit-text-stroke: 2px black;
+    cursor: pointer;
+  }
+
+  .share-btn {
+    color: white;
+    -webkit-text-stroke: 1.5px black;
+    cursor: pointer;
+  }
+
+  .cards {
+    overflow: hidden;
+  }
+
+  .move {
+    transition: all 1s ease;
+  }
+
+  .move:hover {
+    transform: scale(1);
+  }
+
+.animation:hover {
+    transition: all 1s ease-in-out;
+    transform: scale(1.02); 
+    cursor: pointer;
+    
+}
+
+.post-box:hover{
+    overflow: hidden;
+}
+
+.btn:hover{
+    transition: all 1.2s ease-in-out; 
+    transform: scale(1.03); 
+    cursor: pointer;
+}
+
+.audio-container .buttons .play-btn .playing .fa-play{
+    display: none;
+}
+
+
+
+.audio-container .buttons .mute-btn .muted .fa-volume-mute{
+    display: inline-block;
+}
+
+
+.audio-container .buttons .mute-btn .muted .fa-volume-high{
+    display: none;
+} */
+
+
+body {
+    background: #f0f1f3;
+}
+
+.comment-sec {
+    width: 80%;
+}
+
+.input {
+    width: 100%;
+}
+
+.input:focus::placeholder {
+    color: white !important;
+}
+
+.input:focus {
+    background-color: var(--primary);
+    color: white;
+} 
+
+input:focus {
+    background-color: var(--primary);
+    color: white;
+}
+
+input:focus::placeholder {
+    color: white !important;
+}
+
+input::placeholder {
+    color: black !important;
+}
+
+.button {
+    cursor: pointer;
+    /* margin-left: 20px !important; */
+}
+
+.profile-tag {
+    background: rgb(4, 87, 4);
+}
+
+.name {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.reply-icons,
+.reply-input {
+    float: right;
+}
+
+.date, 
+.reply-icons * {
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+
+.reply-input {
+    font-size: 1rem;
+}
+
+.hide-input {
+    display: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+#first-reply {
+    color: red;
+}
+
+
+
+@media(max-width = 769px){
+    #article-section .row .Iconography img, p{
+        display: none;
+    }
+
+    .replies-sec {
+        width: 100%;
+    }
+
+    .button {
+        margin-left: 0 !important;
+    }
+}
+
+@media(max-width = 426px){
+    #article-section .post-card img{
+        width: 100%;
+    }
+
+    .comment-sec {
+        width: 100%;
+    }
+}
